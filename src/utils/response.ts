@@ -21,7 +21,7 @@ const DEFAULT_CORS_HEADERS = [
   'X-Request-Email',
   'X-Device-Identifier',
   'X-Device-Name',
-  'X-NodeWarden-Web-Session',
+  'X-CyberWarden-Web-Session',
 ];
 
 function isWildcardCorsPath(path: string): boolean {

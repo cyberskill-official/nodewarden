@@ -21,7 +21,7 @@ import { readResponseBytesWithProgress } from '../download';
 import { loadVaultCoreSyncSnapshot } from './vault-sync';
 
 type CipherLoginData = NonNullable<Cipher['login']>;
-const NODEWARDEN_WEB_REPAIR_HEADER = 'X-NodeWarden-Web';
+const NODEWARDEN_WEB_REPAIR_HEADER = 'X-CyberWarden-Web';
 
 export async function getFolders(authedFetch: AuthedFetch, cacheKey: string): Promise<Folder[]> {
   const body = await loadVaultCoreSyncSnapshot(authedFetch, cacheKey);

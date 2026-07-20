@@ -129,7 +129,7 @@ async function persistIdentityDevicePushToken(
 }
 
 function shouldUseWebSession(request: Request): boolean {
-  return String(request.headers.get('X-NodeWarden-Web-Session') || '').trim() === '1';
+  return String(request.headers.get('X-CyberWarden-Web-Session') || '').trim() === '1';
 }
 
 function parseCookieValue(request: Request, name: string): string | null {

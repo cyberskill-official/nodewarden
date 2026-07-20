@@ -826,7 +826,7 @@ async function runImportAndAudit(
   metadata: Record<string, unknown>
 ): Promise<BackupImportExecutionResult> {
   const storage = new StorageService(env.DB);
-  const targetDeviceIdentifier = String(request.headers.get('X-NodeWarden-Acting-Device-Id') || '').trim() || null;
+  const targetDeviceIdentifier = String(request.headers.get('X-CyberWarden-Acting-Device-Id') || '').trim() || null;
   const progress: BackupRestoreProgressReporter = async (event) => {
     await notifyUserBackupRestoreProgress(
       env,
@@ -985,7 +985,7 @@ export async function handleRunAdminConfiguredBackup(request: Request, env: Env,
       actorUserId: actorUser.id,
       auditMetadata: auditRequestMetadata(request),
       destinationId: body?.destinationId || null,
-      targetDeviceIdentifier: String(request.headers.get('X-NodeWarden-Acting-Device-Id') || '').trim() || null,
+      targetDeviceIdentifier: String(request.headers.get('X-CyberWarden-Acting-Device-Id') || '').trim() || null,
       trigger: 'manual',
     });
     if (!outcome) {
@@ -1141,7 +1141,7 @@ export async function handleRestoreAdminRemoteBackup(request: Request, env: Env,
 
   try {
     const path = ensureRemoteRestoreCandidate(String(body.path || ''));
-    const targetDeviceIdentifier = String(request.headers.get('X-NodeWarden-Acting-Device-Id') || '').trim() || null;
+    const targetDeviceIdentifier = String(request.headers.get('X-CyberWarden-Acting-Device-Id') || '').trim() || null;
     const imported = await restoreRemoteBackupInDurableObject(env, {
       actorUserId: actorUser.id,
       allowChecksumMismatch: !!body.allowChecksumMismatch,
@@ -1165,7 +1165,7 @@ export async function handleAdminExportBackup(request: Request, env: Env, actorU
   if (!isAdmin(actorUser)) return errorResponse('Forbidden', 403);
 
   const storage = new StorageService(env.DB);
-  const targetDeviceIdentifier = String(request.headers.get('X-NodeWarden-Acting-Device-Id') || '').trim() || null;
+  const targetDeviceIdentifier = String(request.headers.get('X-CyberWarden-Acting-Device-Id') || '').trim() || null;
   let body: { includeAttachments?: boolean; masterPasswordHash?: string } | null = null;
   try {
     if ((request.headers.get('Content-Type') || '').includes('application/json')) {

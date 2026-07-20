@@ -217,7 +217,7 @@ export class NotificationsHub extends DurableObject<Env> {
         payload?: Record<string, unknown> | null;
       } | null;
       const revisionDate = String(body?.revisionDate || '').trim() || new Date().toISOString();
-      const userId = String(request.headers.get('X-NodeWarden-UserId') || body?.userId || '').trim();
+      const userId = String(request.headers.get('X-CyberWarden-UserId') || body?.userId || '').trim();
       const contextId = String(body?.contextId || '').trim() || null;
       const rawUpdateType = body?.updateType;
       const parsedUpdateType = typeof rawUpdateType === 'number' ? rawUpdateType : Number(rawUpdateType);
@@ -755,7 +755,7 @@ async function notifyUserUpdate(
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-NodeWarden-UserId': userId,
+        'X-CyberWarden-UserId': userId,
       },
       body: JSON.stringify({
         revisionDate,
@@ -809,7 +809,7 @@ export async function notifyUserBackupProgress(
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-NodeWarden-UserId': userId,
+        'X-CyberWarden-UserId': userId,
       },
       body: JSON.stringify({
         revisionDate,

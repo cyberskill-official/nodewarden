@@ -445,7 +445,7 @@ export default function App() {
   const importAuthedFetch = useMemo(
     () => async (input: string, init?: RequestInit) => {
       const headers = new Headers(init?.headers || {});
-      headers.set('X-NodeWarden-Import', '1');
+      headers.set('X-CyberWarden-Import', '1');
       return authedFetch(input, { ...init, headers });
     },
     [authedFetch]

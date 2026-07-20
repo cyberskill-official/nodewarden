@@ -48,7 +48,7 @@ wiki/
 AGENTS.md
 settings.json
 .claude/
-NodeWarden-compat/
+CyberWarden-compat/
 .codex-upstream/
 .codex-upstream/bitwarden-server/
 .codex-upstream/bitwarden-clients/

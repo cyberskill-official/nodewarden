@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./NodeWarden.svg" alt="NodeWarden Logo" />
+  <img src="./CyberWarden.svg" alt="CyberWarden Logo" />
 </p>
 
 <p align="center">
@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://workers.cloudflare.com/"><img src="https://img.shields.io/badge/Powered%20by-Cloudflare-F38020?logo=cloudflare&logoColor=white" alt="Powered by Cloudflare" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-LGPL--3.0-2ea44f" alt="License: LGPL-3.0" /></a>
-  <a href="https://github.com/shuaiplus/NodeWarden/releases/latest"><img src="https://img.shields.io/github/v/release/shuaiplus/NodeWarden?display_name=tag" alt="Latest Release" /></a>
+  <a href="https://github.com/shuaiplus/CyberWarden/releases/latest"><img src="https://img.shields.io/github/v/release/shuaiplus/CyberWarden?display_name=tag" alt="Latest Release" /></a>
 
 </p>
 
@@ -26,13 +26,13 @@
 
 > **免责声明**  
 > 本项目仅供学习与交流使用，请定期备份你的密码库。  
-> 本项目与 Bitwarden 官方无关，请不要向 Bitwarden 官方反馈 NodeWarden 的问题。
+> 本项目与 Bitwarden 官方无关，请不要向 Bitwarden 官方反馈 CyberWarden 的问题。
 
 ---
 
 ## 与 Bitwarden 官方服务端能力对比
 
-| 能力 | Bitwarden免费版 | NodeWarden | 说明 |
+| 能力 | Bitwarden免费版 | CyberWarden | 说明 |
 |---|---|---|---|
 | 网页密码库 | ✅ | ✅ | **原创Web Vault界面** |
 | TOTP | ❌ | ✅ | 包括 `steam://` 支持 |
@@ -67,7 +67,7 @@
 
 ## 可视化快速部署
 
-1. Fork NodeWarden 仓库到自己的 GitHub 账号
+1. Fork CyberWarden 仓库到自己的 GitHub 账号
 2. 进入 [Cloudflare Workers & Pages](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create)
 3. 选择 Continue with GitHub 并选择你的仓库
 4. 构建命令填 `npm run build`，部署命令填 `npm run deploy`
@@ -100,8 +100,8 @@
 ## CLI 部署
 
 ```powershell
-git clone https://github.com/shuaiplus/NodeWarden.git
-cd NodeWarden
+git clone https://github.com/shuaiplus/CyberWarden.git
+cd CyberWarden
 
 npm install
 npx wrangler login
@@ -137,15 +137,15 @@ LGPL-3.0 License
 ## 贡献者
 
 <a href="https://github.com/shuaiplus/nodewarden/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=shuaiplus/nodewarden" alt="NodeWarden contributors" />
+  <img src="https://contrib.rocks/image?repo=shuaiplus/nodewarden" alt="CyberWarden contributors" />
 </a>
 
 ## Star History
 
 <a href="https://www.star-history.com/?repos=shuaiplus%2FNodeWarden&type=timeline&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=shuaiplus/NodeWarden&type=timeline&theme=dark&legend=top-left&sealed_token=ck0AMqR8EFMjJ6tMbnGDHT5QwMpO85IUuN7i8e82zRRNPtjoLsAAFwVzxmSZwaid97wLUwy56EEiVE9M-OY0cf16bQKBrU9GaauFoOFXGq-vMqcOyk0tIc4b3o1ZGfDw9IH8o6NUxC125TJkjKSLn9fxhFUUeNr1f1El0UcAUcjsMPl_LX80qQrlvQqp" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=shuaiplus/NodeWarden&type=timeline&legend=top-left&sealed_token=ck0AMqR8EFMjJ6tMbnGDHT5QwMpO85IUuN7i8e82zRRNPtjoLsAAFwVzxmSZwaid97wLUwy56EEiVE9M-OY0cf16bQKBrU9GaauFoOFXGq-vMqcOyk0tIc4b3o1ZGfDw9IH8o6NUxC125TJkjKSLn9fxhFUUeNr1f1El0UcAUcjsMPl_LX80qQrlvQqp" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=shuaiplus/NodeWarden&type=timeline&legend=top-left&sealed_token=ck0AMqR8EFMjJ6tMbnGDHT5QwMpO85IUuN7i8e82zRRNPtjoLsAAFwVzxmSZwaid97wLUwy56EEiVE9M-OY0cf16bQKBrU9GaauFoOFXGq-vMqcOyk0tIc4b3o1ZGfDw9IH8o6NUxC125TJkjKSLn9fxhFUUeNr1f1El0UcAUcjsMPl_LX80qQrlvQqp" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=shuaiplus/CyberWarden&type=timeline&theme=dark&legend=top-left&sealed_token=ck0AMqR8EFMjJ6tMbnGDHT5QwMpO85IUuN7i8e82zRRNPtjoLsAAFwVzxmSZwaid97wLUwy56EEiVE9M-OY0cf16bQKBrU9GaauFoOFXGq-vMqcOyk0tIc4b3o1ZGfDw9IH8o6NUxC125TJkjKSLn9fxhFUUeNr1f1El0UcAUcjsMPl_LX80qQrlvQqp" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=shuaiplus/CyberWarden&type=timeline&legend=top-left&sealed_token=ck0AMqR8EFMjJ6tMbnGDHT5QwMpO85IUuN7i8e82zRRNPtjoLsAAFwVzxmSZwaid97wLUwy56EEiVE9M-OY0cf16bQKBrU9GaauFoOFXGq-vMqcOyk0tIc4b3o1ZGfDw9IH8o6NUxC125TJkjKSLn9fxhFUUeNr1f1El0UcAUcjsMPl_LX80qQrlvQqp" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=shuaiplus/CyberWarden&type=timeline&legend=top-left&sealed_token=ck0AMqR8EFMjJ6tMbnGDHT5QwMpO85IUuN7i8e82zRRNPtjoLsAAFwVzxmSZwaid97wLUwy56EEiVE9M-OY0cf16bQKBrU9GaauFoOFXGq-vMqcOyk0tIc4b3o1ZGfDw9IH8o6NUxC125TJkjKSLn9fxhFUUeNr1f1El0UcAUcjsMPl_LX80qQrlvQqp" />
  </picture>
 </a>

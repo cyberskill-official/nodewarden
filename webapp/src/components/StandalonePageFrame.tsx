@@ -12,9 +12,9 @@ export default function StandalonePageFrame(props: StandalonePageFrameProps) {
   return (
     <div className="standalone-shell">
       <div className="standalone-brand standalone-brand-outside">
-        <img src="/nodewarden-logo.svg" alt="NodeWarden logo" className="standalone-brand-logo" />
+        <img src="/nodewarden-logo.svg" alt="CyberWarden logo" className="standalone-brand-logo" />
         <div>
-          <span className="standalone-brand-wordmark" role="img" aria-label="NodeWarden" />
+          <span className="standalone-brand-wordmark" role="img" aria-label="CyberWarden" />
         </div>
       </div>
 
@@ -29,7 +29,7 @@ export default function StandalonePageFrame(props: StandalonePageFrameProps) {
 
       <div className="standalone-footer">
         <a
-          href="https://github.com/shuaiplus/NodeWarden/releases/latest"
+          href="https://github.com/shuaiplus/CyberWarden/releases/latest"
           target="_blank"
           rel="noreferrer"
           className="standalone-version"
