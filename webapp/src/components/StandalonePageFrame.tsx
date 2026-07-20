@@ -26,17 +26,6 @@ export default function StandalonePageFrame(props: StandalonePageFrameProps) {
         </div>
         {props.children}
       </div>
-
-      <div className="standalone-footer">
-        <a
-          href="https://github.com/shuaiplus/CyberWarden/releases/latest"
-          target="_blank"
-          rel="noreferrer"
-          className="standalone-version"
-        >
-          v{APP_VERSION}
-        </a>
-      </div>
     </div>
   );
 }
