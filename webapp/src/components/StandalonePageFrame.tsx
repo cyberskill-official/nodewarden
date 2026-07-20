@@ -12,10 +12,7 @@ export default function StandalonePageFrame(props: StandalonePageFrameProps) {
   return (
     <div className="standalone-shell">
       <div className="standalone-brand standalone-brand-outside">
-        <img src="/nodewarden-logo.svg" alt="CyberWarden logo" className="standalone-brand-logo" />
-        <div>
-          <span className="standalone-brand-wordmark" role="img" aria-label="CyberWarden" />
-        </div>
+        <img src="/icon-512.png" alt="CyberWarden logo" className="standalone-brand-logo" />
       </div>
 
       <div className="auth-card">
