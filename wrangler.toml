@@ -41,3 +41,6 @@ new_sqlite_classes = [ "BackupTransferRunner" ]
 [observability.logs]
 enabled = true
 invocation_logs = true
+
+[observability.traces]
+enabled = false
